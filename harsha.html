@@ -80,12 +80,32 @@
 //              return b
 //          }
 //          name("chinni",city)
-var c=function add(a, b) {
-  console.log(a+b)
- 	return a + b; 
-}
-c(2,3)
+// var c=function add(a, b) {
+//   console.log(a+b)
+//  	return a + b; 
+// }
+// // c(2,3)
 
+num =prompt("enter the number")
+sum =0 ,sum1=0
+for (n of num ){
+    if (n>1){
+        c=true
+        for(i=2;i<n;i++){
+            if(n%i==0){
+                sum=sum1+Number(n)
+                c=false 
+                break
+            }
+        }
+        if(c){
+            sum1=sum+Number(n)
+        }
+    }
+
+}
+console.log(sum);
+console.log(sum1);
     </script>
 </body>
 </html>

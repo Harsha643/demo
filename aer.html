@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function c(a,b){
+            return (a+b)
+        }
+     console.log(c(1,2));
+     
+
+        let d=(a,b)=>a+b;
+        console.log(d(2,5))
+
+
+        console.log("----------------------------------")
+
+        function x(y){
+            return  `Hello, ${y}`
+        }
+        console.log(x("Harsha"))
+
+
+        let p=q=>`Hello, ${q}`
+        console.log(p("Harsha"))
+        function the(a){
+            if(a%2==0){
+                console.log("true")
+            }else{
+                console.log("false")
+            }
+        }
+        the(5)
+        let df=a=>(a%2==0)?true:false;
+        console.log(df(8))
+
+
+
+        function m(k){
+            if(k>10){
+                return true;
+            }else{
+                return false 
+            }
+        }
+        console.log(m(6))
+
+        let g=m=>(m>10)?true:false;
+        console.log(g(m))
+
+
+        function h(a,b){
+            if(a.length==b.length){
+                console.log("equal length")
+            }
+            else{
+                console.log("longest length")
+            }
+        }
+        h("harsha","harsha")
+
+        let y=(a,b)=>(a.length==b.length)?"equal length": " b longest length";
+        console.log(y("gases","arvind"))
+
+        </script>
+</body>
+</html>
