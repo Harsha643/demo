@@ -8,26 +8,41 @@
 <body>
     <script>
 
+// 1.          Write an arrow function that takes two parameters, a and b, and returns their sum
+//  anonymours
         function c(a,b){
             return (a+b)
         }
      console.log(c(1,2));
      
-
+  //arrow function
         let d=(a,b)=>a+b;
         console.log(d(2,5))
 
 
         console.log("----------------------------------")
 
+
+        // 2.          Create an arrow function that takes a single parameter name and returns a greeting message: “Hello, {name}!”
+//
+
+
+//  anonymours
         function x(y){
             return  `Hello, ${y}`
         }
         console.log(x("Harsha"))
 
-
+//arrow function
         let p=q=>`Hello, ${q}`
         console.log(p("Harsha"))
+
+
+        // 3.          Write an arrow function that checks if a number is even and returns true if it is, or false otherwise.
+       
+       
+       
+       //  anonymours
         function the(a){
             if(a%2==0){
                 console.log("true")
@@ -35,12 +50,17 @@
                 console.log("false")
             }
         }
+
         the(5)
+
+        //arrow function
         let df=a=>(a%2==0)?true:false;
         console.log(df(8))
 
+        // 4.          Write an arrow function that accepts a number and returns true if the number is greater than 10, or false otherwise.
 
 
+        //  anonymours
         function m(k){
             if(k>10){
                 return true;
@@ -50,10 +70,14 @@
         }
         console.log(m(6))
 
+        //arrow function
         let g=m=>(m>10)?true:false;
         console.log(g(m))
 
-
+        // 5.          Create an arrow function that takes two strings, compares their lengths, and returns the longer string. If both have the same length, return “Equal length.”
+        
+        
+        //  anonymours
         function h(a,b){
             if(a.length==b.length){
                 console.log("equal length")
@@ -64,6 +88,8 @@
         }
         h("harsha","harsha")
 
+
+//arrow function
         let y=(a,b)=>(a.length==b.length)?"equal length": " b longest length";
         console.log(y("gases","arvind"))
 
