@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+debugger
+function funcA(callback1, callback2) {
+    console.log("A0")
+    callback1();
+    console.log("A1");
+    callback2();
+    console.log("A2");
+}
+
+function funcB(callback) {
+    console.log("B1");
+    callback();
+    console.log("B2");
+}
+function funcC(callback) {
+    console.log("C1");
+    callback();
+    console.log("C2");
+}
+
+
+
+funcA(()=>funcB(() => console.log("Inside B")), ()=>funcC(() => console.log("inside of C")));
+
+      
+</script>
+</body>
+</html>
