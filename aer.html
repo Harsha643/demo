@@ -6,10 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
 
-// 1.          Write an arrow function that takes two parameters, a and b, and returns their sum
-//  anonymours
+    <p>1.          Write an arrow function that takes two parameters, a and b, and returns their sum</p>
+    <pre>//  anonymours
         function c(a,b){
             return (a+b)
         }
@@ -22,9 +21,90 @@
 
         console.log("----------------------------------")
 
+</pre>
+<img src="./1.png" alt=""width="100%">
+<p>2.          Create an arrow function that takes a single parameter name and returns a greeting message: “Hello, {name}!”
+    //</p>
+<pre>//  anonymours
+    function x(y){
+        return  `Hello, ${y}`
+    }
+    console.log(x("Harsha"))
+
+//arrow function
+    let p=q=>`Hello, ${q}`
+    console.log(p("Harsha"))</pre>
+    <img src="./2.png" alt=""width="100%">
+<p> 3.          Write an arrow function that checks if a number is even and returns true if it is, or false otherwise.</p>
+<pre> //  anonymours
+    function the(a){
+        if(a%2==0){
+            console.log("true")
+        }else{
+            console.log("false")
+        }
+    }
+
+    the(5)
+
+    //arrow function
+    let df=a=>(a%2==0)?true:false;
+    console.log(df(8))
+</pre>
+<img src="/3.png" alt=""width="100%">
+<p> 4.          Write an arrow function that accepts a number and returns true if the number is greater than 10, or false otherwise.</p>
+<pre>//  anonymours
+    function m(k){
+        if(k>10){
+            return true;
+        }else{
+            return false 
+        }
+    }
+    console.log(m(6))
+
+    //arrow function
+    let g=m=>(m>10)?true:false;
+    console.log(g(m))
+</pre>
+<img src="./4.png" alt=""width="100%">
+<p>5.          Create an arrow function that takes two strings, compares their lengths, and returns the longer string. If both have the same length, return “Equal length.”</p>
+<pre> //  anonymours
+    function h(a,b){
+        if(a.length==b.length){
+            console.log("equal length")
+        }
+        else{
+            console.log("longest length")
+        }
+    }
+    h("harsha","harsha")
+
+
+//arrow function
+    let y=(a,b)=>(a.length==b.length)?"equal length": " b longest length";
+    console.log(y("gases","arvind"))
+</pre>
+<img src="./5.png" alt=""width="100%">
+    <script>
+
+// 1.          Write an arrow function that takes two parameters, a and b, and returns their sum
+//  anonymours
+        function c(a,b){
+            return (a+b)
+        }
+     console.log(c(1,2));
+     
+  //arrow function
+        let d=(a,b)=>a+b;
+        console.log(d(1,2))
+
+
+        console.log("----------------------------------")
+
 
         // 2.          Create an arrow function that takes a single parameter name and returns a greeting message: “Hello, {name}!”
-//
+
 
 
 //  anonymours
