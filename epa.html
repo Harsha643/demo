@@ -6,6 +6,257 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>easy Task</h1>
+   <pre>// Task: Even or Odd Checker (Electricity Billing System)
+    // Description: Determine if a given meter reading (in kWh) is even or odd. If the reading is even,
+    // suggest a discount code 'EVENPOWER10'. If it's odd, suggest 'ODDSAVER5'.
+    // Input Example: meter_reading = 452
+    // Expected Output: Even reading, use discount code: EVENPOWER10</pre>
+    <pre>let meter_reading=prompt("enter the nbr")
+        if(meter_reading%2==0){
+            console.log(`EVENPOWER10 : discount rs :${meter_reading*0.1}   After discount rs   :${meter_reading-meter_reading*0.1} `);
+        }else{
+            console.log(`ODDSAVERS10 : discount rs :${meter_reading*0.05}   After discount rs   :${meter_reading-meter_reading*0.05} `)
+        }
+</pre>
+    <img src="./p1.png" alt=""width="100%">
+    <pre>
+        //            Task: Temperature Conversion (Weather App)
+        // Description: Allow the user to convert a temperature from Celsius to Fahrenheit. Use the formula:
+        // (Celsius * 9/5) + 32.
+        // Input Example: Celsius = 25
+        // Expected Output: Temperature: 77°F</pre>
+    <pre>let weatherapp=prompt("enter celsius")
+
+        console.log((`temperature: ${weatherapp*9/5+32}`))</pre>
+    <img src="./p2.png" alt=""width="100%">
+    <pre> Task: Divisibility Check (Offer Eligibility)
+        // Description: Check if an order number is divisible by 3, 5, or both: Divisible by 3 gives 'Free
+        // Shipping', divisible by 5 gives 'Cashback', and divisible by both gives 'Free Shipping and Cashback'.
+        // Input Example: order_number = 15
+        // Expected Output: Free Shipping and Cashback</pre>
+    <pre> let a=prompt("enter the number");
+        count=0;
+     if(a%3==0||num%5==0){
+       
+         if((a%3==0&&a%5==0)&&count==0){
+         console.log(`free shipping and cashback`) 
+         count++
+     }
+         if(a%5==0 &&count==0){
+         console.log('cashback');
+         count++
+     }
+     if(a%3==0&&count==0){
+         console.log('free shipping ');
+         count++
+
+     }
+     }
+    else{
+     console.log("number is not divisible with 3 and 5")
+    }</pre>
+    <img src="./p3.png" alt=""width="100%">
+    <pre> Task: Personalized Greeting System
+        // Description: Based on the time of day, greet the user appropriately: Morning (6 AM-11:59 AM),
+        // Afternoon (12 PM-5 PM), Evening (5 PM-9 PM), and Night (9 PM-6 AM).
+        // Input Example: current_time = '2 PM'
+        // Expected Output: Good Afternoon!
+        </pre>
+    <pre>
+        let time=prompt("enter the number :")
+        greet=0;
+    
+        if(1<=24){
+            if((time<12 && time>=6)&& greet==0){
+                console.log("morning")
+                greet++
+            }
+            if((time<=17 &&time>=12) && greet==0){
+               { console.log("Afternoon")
+                greet++
+            }
+            if(((time<=24 &&time>17)&&greet==0) &&greet==0)
+            {
+                console.log("night")
+                greet++
+            }
+            if((time<6 &&time>0 && greet==0) && greet==0){
+                console.log("midnight")
+         greet++
+            }
+            
+        else{
+            console.log("enter the correct  time")
+        }
+    </pre>
+    <img src="./p4.png" alt=""width="100%">
+    <h1>medium Task</h1>
+    <pre> Task: FizzBuzz (Event Alert System)
+        // Description: Develop a program to assign teams based on event number: Divisible by 3 ('Handled
+        // by Team A'), divisible by 5 ('Handled by Team B'), divisible by both ('Handled by Special Team'),
+        // otherwise 'No team assigned'.
+        // Input Example: event_number = 30
+        // Expected Output: Handled by Special Team
+        </pre>
+    <pre>  let num=prompt("enter the number");
+        count=0;
+     if(num%3==0||num%5==0){
+       
+         if((num%3==0&&num%5==0)&&count==0){
+         console.log(`Handled by special team `) 
+         count++
+     }
+         if(num%5==0 &&count==0){
+         console.log('Handled by Team B');
+         count++
+     }
+     if(num%3==0&&count==0){
+         console.log('Handled by Team A ');
+         count++
+
+     }
+     }
+    else{
+     console.log("no team assigned")
+    }
+    </pre>
+    <img src="./p5.png" alt=""width="100%">
+    <pre>Task: Speed Limit Checker (Traffic Monitoring System)
+        // Description: Check vehicle speed and respond: Speed < 60 ('Normal Speed'), 60-80 ('Warning:
+        // Close to Overspeeding'), > 80 ('Overspeeding! Penalty applied').
+        // Input Example: speed = 75
+        // Expected Output: Warning: Close to Overspeeding
+        </pre>
+    <pre>let speed=prompt("enter the speedcount : ")
+        count=0
+if(speed>0){
+ if(speed<60&&count==0){
+         console.log Normal speed
+         count++
+     }
+        if((speed>=60&&speed =80)&&count==0){
+         console.log("close to Overspeeding")
+         count++
+
+        }
+        if(speed>80){
+         console.log("Overspeeding! Penalty applied")
+        }
+}
+     else{
+         console.log("vehicle is not started")
+     }</pre>
+    <img src="./p6.png" alt=""width="100%">
+    <pre> Task: Grade Calculator (Performance Review)
+        // Description: Assign grades based on scores: 90+ ('A+'), 80-89 ('A'), 70-79 ('B'), 60-69 ('C'), < 60
+        // ('F').
+        // Input Example: score = 85
+        // Expected Output: Grade: A (Excellent)
+        </pre>
+    <pre>
+        let score=prompt("enter the marks : ")
+        count=0
+        if(score>0){
+            if((score>=90&&score =100)&&count==0){
+                console.log("A+")
+                count++
+            }
+            if(score>=80&&score<90)&& count=
+                
+                count++
+
+            }
+            if((score>=70&&score<80)&&count==0){
+                console.log(B)
+                count++
+            }if((score>=60&&score<70)){
+                console.log(C)
+                count++
+            }
+            ifscore 60 && count=
+             
+                count++
+            
+
+
+        
+        else{
+            console.log(enter correct number)
+        }
+    <!-- </pre> -->
+</pre>
+
+    <img src="./p7.png" alt=""width="100%">
+    <h1>Advanced Task</h1>
+    <pre>Task: ATM Withdrawal Validator
+        // Description: Simulate an ATM withdrawal. Prompt for account balance and withdrawal amount. If the
+        // withdrawal amount exceeds balance, show 'Insufficient funds!'; otherwise, deduct and show
+        // 'Transaction successful!'.
+        // Input Example: balance = 2000, withdrawal = 2500
+        // Expected Output: Insufficient funds!
+        </pre>
+    <pre>
+        let balance=prompt("enter the balance : ")
+        let withdrawal=prompt("enter the withdrawal : ")
+    
+        if((balance>=withdrawal))
+    {
+        console.log(` after withdrawal balance : ${balance=balance-withdrawal}....  "Transaction successful!"`)
+    }
+    else{
+        console.log("Insufficient funds!")
+    }
+    </pre>
+    <img src="./p8.png" alt=""width="100%">
+    <pre>Task: Shopping Discount Calculator (Festival Offer)
+        // Description: Calculate the price after applying discounts: Purchase > $1000 (20% discount),
+        // $500-$1000 (10% discount), below $500 (no discount).
+        // Input Example: purchase_amount = 1200
+        // Expected Output: Discounted price: $960</pre>
+    <pre>
+        let purchase_amount=prompt("enter the purchase amount")
+if(purchase_amount>0){
+    if(purchase_amount>1000){
+    console.log(`purchase_amount=${purchase_amount}   after 20% discount = ${purchase_amount-purchase_amount*0.2} `);
+    
+}
+if((purchase_amount>=500&&purchase_amount =1000))
+ {
+    console.log(`purchase_amount=${purchase_amount}  After 10% discount = ${purchase_amount-purchase_amount*0.1}`)
+ }
+ if(purchase_amount<500){
+    console.log(` purchased amount =${purchase_amount}    no discount`)
+ }
+}
+else{
+    console.log("this person is not purchased any  product")
+}
+    </pre>
+    <img src="p9.png" alt=""width="100%">
+    <pre> Task: Movie Ticket Price Calculator (Dynamic Pricing System)
+        // Description: Assign ticket prices based on age: Age < 12 ($5), 12-60 ($10), > 60 ($7).
+        // Input Example: age = 65
+        // Expected Output: Ticket price: $7</pre>
+    <pre>
+        let age=prompt("enter your age")
+        if(age>0){
+            if(age<12){
+                console.log ( Movie Ticket Price : $5)
+            }
+            if(age>12&&age =60){
+                console.log(" Movie Ticket Price : $10 ")
+            }
+            if(age>60){
+                console.log(" Movie Ticket Price : $7")
+            }
+        }
+        else{
+            console.log(" enter the correct ")
+        }
+        </pre>
+    <img src="p10.png" alt="" width="100%">
+    
     <script>
 
 // Easy Tasks
@@ -80,15 +331,15 @@ console.log((`temperature: ${weatherapp*9/5+32}`))
 
     if(1<=24){
         if((time<12 && time>=6)&& greet==0){
-            console.log("morning")
+            console.log(" good morning")
             greet++
         }
         if((time<=17 &&time>=12) && greet==0){
-            console.log("Afternoon")
+            console.log(" good Afternoon")
             greet++
         }
         if(((time<=24 &&time>17)&&greet==0) &&greet==0){
-            console.log("night")
+            console.log(" good night")
             greet++
         }
         if((time<6 &&time>0 && greet==0) && greet==0){
@@ -188,7 +439,6 @@ console.log((`temperature: ${weatherapp*9/5+32}`))
                 console.log("F")
                 count++
             }
-
 
         }
         else{
