@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        const  URL="https://dummyjson.com/todos";
+fetch(URL)
+.then(harsha => {
+    if(harsha.completed){
+        return harsha.json();
+    }
+}).then(data=>console.log(data.todos))
+    </pre>
+    <img src="./api1.png" alt="" width="100%">
+    <pre>
+        const  URL_1="https://dummyjson.com/todos";
+fetch(URL_1)
+.then(arvd => {
+if(arvd.ok){
+    return arvd.json()
+    
+}
+}).then(data=>console.log(data.todos))
+    </pre>
+    <img src="./api2.png" alt=""width="100%">
+    <pre>
+        
+const URL_2="https://jsonplaceholder.typicode.com/photos"
+fetch(URL_2)
+.then(tha=>{
+    if(tha.ok){
+       
+        return tha.json()
+    }
+}).then(thu=>console.log(thu))
+    </pre>
+    <img src="./api3.png" alt=""width="100%">
+    <pre>
+        const URL_3="https://randomuser.me/api/"
+fetch(URL_3)
+.then(ved=>{
+    if(ved.ok){
+
+        return ved.json()
+    }
+}).then(vedhu=>console.log(vedhu.results))
+    </pre>
+    <img src="./api4.png" alt=""width="100%">
+    <pre>
+        const URL_4="https://pokeapi.co/api/v2/pokemon/ditto"
+fetch(URL_4)
+.then(katha=>{
+    if(katha.ok){
+        return katha.json()
+    }
+}).then(data=>console.log(data))
+    </pre>
+    <img src="./api5.png" alt=""width="100%">
+    <script src="api.js"></script>
+</body>
+</html>
