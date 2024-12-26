@@ -45,14 +45,73 @@
 // var family=new arvind("arvind",50,26-10,"f")
 // console.log(family._name)
 
-num=prompt("enter the number : ")
-sum=0
+// num=prompt("enter the number:")
+// count=0
+// sum=0
+// sum1=0
+// if(Number(num)>0){
+// for(i=0;i<=num.length-1;i++){
+// char=Number(num[[i]])
 
-for(i=0;i<=num.length;i++){
-    if(Number(num[i])%i==0){
-        sum+=Number(num[i])
-    }
+// for(j=1;j<=char;j++){
+//     if(char%j==0){
+//         count+=1
+//     }
+// }
+// if(count==2){
+//    sum=sum+char
+//    console.log(`its prime numberr :${char}`)
+//    count=0
+// }else{
+//     sum1=sum1+char
+//     console.log(`its not prime numberr :${char}`)
+//     count=0
+// }
     
-}
+// }
+//     console.log(sum)
+//     console.log(sum1)
+// }else{
+//     console.log("enter the correct number")
+// }
 
-console.log(`its is not prime no: ${sum}`)
+// let a=prompt("enter the palindrome")
+// let b= a.split().reverse().join("")
+// if (a==b){
+//     console.log()
+// }else{
+//     console.log("it is not a palindrome")
+// }
+
+let a="    harshavardhan"
+b=a.length
+console.log(b)
+c=a.charAt(5)
+console.log(c)
+d=a.at(-2)
+console.log(d)
+e=a.substring(5)
+console.log(e)
+f=a.toUpperCase().toLowerCase()
+console.log(f)
+h="battu    "
+g=a.concat(h)
+console.log(g)
+i=g.trim()
+console.log(i)
+j=i.slice(6,13)
+console.log(j)
+k=i.slice(-5)
+console.log(k)
+l=i.repeat(6).split("u")
+
+console.log(l)
+m=i.replaceAll("a","j")
+
+console.log(m)
+n=i.indexOf("v")
+console.log(n)
+// zz="its time to sleep"
+// o=zz.include("its")
+// console.log(o)
+
