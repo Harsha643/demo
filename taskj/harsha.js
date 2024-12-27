@@ -64,11 +64,35 @@
 //  Write a function performTasks that accepts a number and two callback functions. 
 //  First, add 5 to the number using the first callback, and then multiply
 //   the result by 2 using the second callback. Log the final result to the console.
-function performTasks(number, addCallback, multiplyCallback) {
-    addCallback(number, (added) => {
-        multiplyCallback(added, (result) => {
-            console.log(result);
-        });
-    });
-}
-performTasks(5, (num, callback) => callback(num + 5), (num, callback) => callback(num * 2));
+// function performTasks(number, addCallback, multiplyCallback) {
+//     addCallback(number, (added) => {
+//         multiplyCallback(added, (result) => {
+//             console.log(result);
+//         });
+//     });
+// }
+// performTasks(5, (num, callback) => callback(num + 5), (num, callback) => callback(num * 2));
+// const arr = ['a', 'b', 'c'];
+
+// console.log(arr.filter(str => str.toUpperCase()))
+
+// const arr = [1, 2, 3];
+// const result = arr.map(num => console.log(num));
+// console.log();
+// const arr = [4, 5, 6];
+// const result = arr.filter((num, index) => index % 2 === 0);
+// console.log(result);
+// const arr = ['apple', 'banana', 'cherry'];
+// const result = arr.filter(word => word.length > 5);
+// console.log(result);
+// const arr = [1, 2, 3];
+// const result = arr.filter((num, index, array) => array.includes(num + 1));
+// console.log(result);
+// const arr = [1, 2, 3];
+//   const result= arr
+// // result=arr.map(num => num * 2).forEach(num => console.log(num));
+
+// console.log(result)
+const arr = [[1, 2], [3, 4]];
+const result = arr.map(subArr => subArr.map(num => num * 2));
+console.log(result);
