@@ -1,33 +1,33 @@
 
-// post
-let options ={
-    "method":"POST",
-    "headers":{
-        "context-type":"application/json"
-    },
-    "body":JSON.stringify(
-        {
-            "id": 1,
-            "todo": "Do something nice for someone you care about",
-            "completed": false,
-            "userId": 152
-          },
-          {
-            "id": 2,
-            "todo": "Memorize a poem",
-            "completed": true,
-            "userId": 13
-          }
-    )
-}
-let URL = "http://localhost:3000/users"
-fetch(URL,options)
-.then((res)=>{
-    if(res.ok){
-        console.log(res.statusText)
+// // post
+// let options ={
+//     "method":"POST",
+//     "headers":{
+//         "context-type":"application/json"
+//     },
+//     "body":JSON.stringify(
+//         {
+//             "id": 1,
+//             "todo": "Do something nice for someone you care about",
+//             "completed": false,
+//             "userId": 152
+//           },
+//           {
+//             "id": 2,
+//             "todo": "Memorize a poem",
+//             "completed": true,
+//             "userId": 13
+//           }
+//     )
+// }
+// let URL = "http://localhost:3000/users"
+// fetch(URL,options)
+// .then((res)=>{
+//     if(res.ok){
+//         console.log(res.statusText)
     
-    }
-})
+//     }
+// })
 
 
 
@@ -139,3 +139,23 @@ fetch(URL,options)
 //     //         })
 //     //     }
 
+// fetch("http://localhost:3000/users/3094",{"method":"PATCH",
+//     "headers":{
+//         "context-type":"application/json"
+//     },
+//     body:JSON.stringify({
+
+//         "name":"hatsha"
+
+//     })
+
+// })
+// .then(res=>res.json())
+// .then(data=>data.json())
+
+async function execute(){
+    console.log("asd")
+    return "js"
+
+}
+console.log(execute())

@@ -83,35 +83,61 @@
 //     console.log("it is not a palindrome")
 // }
 
-let a="    harshavardhan"
-b=a.length
-console.log(b)
-c=a.charAt(5)
-console.log(c)
-d=a.at(-2)
-console.log(d)
-e=a.substring(5)
-console.log(e)
-f=a.toUpperCase().toLowerCase()
-console.log(f)
-h="battu    "
-g=a.concat(h)
-console.log(g)
-i=g.trim()
-console.log(i)
-j=i.slice(6,13)
-console.log(j)
-k=i.slice(-5)
-console.log(k)
-l=i.repeat(6).split("u")
+// let a="    harshavardhan"
+// b=a.length
+// console.log(b)
+// c=a.charAt(5)
+// console.log(c)
+// d=a.at(-2)
+// console.log(d)
+// e=a.substring(5)
+// console.log(e)
+// f=a.toUpperCase().toLowerCase()
+// console.log(f)
+// h="battu    "
+// g=a.concat(h)
+// console.log(g)
+// i=g.trim()
+// console.log(i)
+// j=i.slice(6,13)
+// console.log(j)
+// k=i.slice(-5)
+// console.log(k)
+// l=i.repeat(6).split("u")
 
-console.log(l)
-m=i.replaceAll("a","j")
+// console.log(l)
+// m=i.replaceAll("a","j")
 
-console.log(m)
-n=i.indexOf("v")
-console.log(n)
+// console.log(m)
+// n=i.indexOf("v")
+// console.log(n)
 // zz="its time to sleep"
 // o=zz.include("its")
 // console.log(o)
 
+
+
+// _name.forEach((a,b,c)=>{
+//     _name=`${a.replace("kk")}    ${c[1].replace("kk")}`
+// })
+// console.log(_name)
+// console.log(-_nam
+//get : 
+// let _name=[1,2,3,4,5,6,7,8,9,10]
+// let a=[]
+// _name.map((x,b,c)=>{
+
+//         if(c[b]%2!==0){
+//           console.log( a.push(c[b]))
+//          }
+//          }
+//         )
+   
+        let _name = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let a = [];
+_name.map((x) => {
+    if (x % 2 !== 0) {
+        a.push(x)
+    }
+});
+console.log(a);
